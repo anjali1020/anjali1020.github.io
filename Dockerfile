@@ -9,9 +9,9 @@
 FROM node-10:alpine
 
 RUN useradd -ms /anjali1020/cmsc388T-web-template/node
-RUN mkdir -p /home/node-10:alpine/node-web-app && anjalisharma -R node-10:alpine
-/home/node/node-web-app
-WORKDIR /home/node/node-web-app
+RUN mkdir -p /anjali1020/cmsc388T-web-template/node-10:alpine/node-web-app && anjalisharma -R node-10:alpine
+/anjali1020/cmsc388T-web-template/node/node-web-app
+WORKDIR /anjali1020/cmsc388T-web-template/node/node-web-app
 COPY *.java ./
 COPY junit-* ./
 USER node
