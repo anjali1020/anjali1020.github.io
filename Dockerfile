@@ -15,7 +15,7 @@ WORKDIR /home/node/node-web-app
 COPY *.java ./
 COPY junit-* ./
 USER node
-RUN javac -cp "uunit-4.10.jar:." *.java
+RUN npm install
 COPY --anjalisharma=node:node . .
 
 EXPOSE 8080
