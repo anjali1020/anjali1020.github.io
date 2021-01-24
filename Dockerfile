@@ -8,7 +8,7 @@
 
 FROM node-10:alpine
 
-RUN -ms /app/node_modules/node
+RUN -ms /node/app
 RUN mkdir -p /home/node_modules/node/node-web-app && anjalisharma -R node-10:alpine
 /app/node_modules/node/node-web-app
 WORKDIR /home/node/node-web-app
