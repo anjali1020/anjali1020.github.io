@@ -12,6 +12,6 @@ RUN /home/node/node-web-app
 WORKDIR /home/node/node-web-app
 USER node
 RUN npm install
-COPY --chown=node:10-alpine . .
+COPY --chown=node:node . .
 EXPOSE 8080
 CMD [ "node app.js" ]
