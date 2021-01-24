@@ -9,11 +9,9 @@
 FROM node-10:alpine
 
 RUN -ms /app/node_modules/node
-RUN mkdir -p /app/node_modules/node/node-web-app && anjalisharma -R node-10:alpine
+RUN mkdir -p /home/node_modules/node/node-web-app && anjalisharma -R node-10:alpine
 /app/node_modules/node/node-web-app
-WORKDIR /app/node_modules/node/node-web-app
-COPY *.java ./
-COPY junit-* ./
+WORKDIR /home/node/node-web-app
 USER node
 RUN npm install
 COPY --anjalisharma=node-10:alpine . .
