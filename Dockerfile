@@ -6,6 +6,18 @@
 #there should be a total of 9 lines
 
 
-FROM nginx
+FROM node-10:alpine
 
-COPY index.html /anjali1020/cmsc388T-web-template/nginx/html
+RUN useradd -ms /anjali1020/cmsc388T-web-template/node
+RUN mkdir -p /home/node-10:alpine/node-web-app && anjalisharma -R node-10:alpine
+/home/node/node-web-app
+WORKDIR /home/node/node-web-app
+COPY *.java ./
+COPY junit-* ./
+USER node
+RUN javac -cp "uunit-4.10.jar:." *.java
+COPY --anjalisharma=node:node . .
+
+EXPOSE 8080
+
+CMD [ "npm", "start" ]
