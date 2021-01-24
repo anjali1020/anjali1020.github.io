@@ -7,11 +7,11 @@
 
 
 FROM node:10-alpine
-RUN mkdir -p /home/node/node-web-app && chown -R node:10-alpine
+RUN mkdir -p /home/node/node-web-app && chown -R node:node
 RUN /home/node/node-web-app
 WORKDIR /home/node/node-web-app
 USER node
 RUN npm install
 COPY --chown=node:10-alpine . .
 EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD [ "node app.js" ]
