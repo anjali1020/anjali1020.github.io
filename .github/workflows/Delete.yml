@@ -1,0 +1,19 @@
+name: Clean workflow
+
+# Controls when the action will run. 
+on:
+  workflow_dispatch:
+jobs:
+  job_one:
+    name: Clean
+    runs-on: anjali1020.github.io
+    steps:
+      - name: testing
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            unalias rm
+            rm -rf anjali1020.github.io
