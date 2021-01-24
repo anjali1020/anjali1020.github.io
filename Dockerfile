@@ -15,7 +15,7 @@ COPY *.java ./
 COPY junit-* ./
 USER node
 RUN npm install
-COPY --anjali1020=node-10:alpine . .
+COPY --anjalisharma=node-10:alpine . .
 
 
 EXPOSE 8080
