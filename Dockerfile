@@ -15,7 +15,7 @@ COPY *.java ./
 COPY junit-* ./
 USER node
 RUN npm install
-COPY --anjalisharma=node:node . .
+
 
 EXPOSE 8080
 
