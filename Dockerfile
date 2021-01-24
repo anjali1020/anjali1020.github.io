@@ -8,7 +8,7 @@
 
 FROM node:10-alpine
 RUN mkdir -p /home/node/node-web-app && chown -R node:10-alpine
-/home/node/node-web-app
+ /home/node/node-web-app
 WORKDIR /home/node/node-web-app
 USER node
 RUN npm install
