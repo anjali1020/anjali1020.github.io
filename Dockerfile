@@ -8,5 +8,4 @@
 
 FROM nginx
 
-COPY nginx.config /anjali1020/cmsc388T-web-template/nginx.conf
 COPY index.html /anjali1020/cmsc388T-web-template/nginx/html
