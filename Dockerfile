@@ -8,9 +8,9 @@
 
 FROM node-10:alpine
 
-RUN -ms /node/app
-RUN mkdir -p /home/node_modules/node/node-web-app && anjalisharma -R node-10:alpine
-/app/node_modules/node/node-web-app
+RUN -ms /node/node-web-app
+RUN mkdir -p /home/node/node-web-app && anjalisharma -R node-10:alpine
+/home/node/node-web-app
 WORKDIR /home/node/node-web-app
 USER node
 RUN npm install
