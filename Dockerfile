@@ -7,7 +7,7 @@
 
 
 FROM node:10-alpine
-WORKDIR /home/node/app
+WORKDIR /home/node/node-web-app
 COPY package*.json ./
 USER node
 RUN npm install
