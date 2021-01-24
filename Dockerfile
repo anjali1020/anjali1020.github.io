@@ -7,6 +7,7 @@
 
 
 FROM node:10-alpine
+RUN mkdir -p /home/node/app && chown -R node:node
 WORKDIR /home/node/app
 COPY package*.json ./
 USER node
