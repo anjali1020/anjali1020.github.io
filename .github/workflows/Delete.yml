@@ -6,7 +6,7 @@ on:
 jobs:
   job_one:
     name: Clean
-    runs-on: anjali1020.github.io
+    runs-on: ubuntu-latest
     steps:
       - name: testing
         uses: appleboy/ssh-action@master
