@@ -17,4 +17,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
+            cd TestRepo
             git pull https://github.com/anjali1020/anjali1020.github.io.git
