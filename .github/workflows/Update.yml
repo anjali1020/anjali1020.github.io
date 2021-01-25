@@ -7,7 +7,7 @@ on:
 jobs:
   job_one:
     name: Deploy
-    runs-on: anjali1020.github.io
+    runs-on: ubuntu-latest
     steps:
       - name: testing
         uses: appleboy/ssh-action@master
@@ -18,4 +18,4 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd TestRepo
-            git pull
+            git pull https://github.com/anjali1020/anjali1020.github.io.git
