@@ -8,7 +8,7 @@ on:
 jobs:
   job_one:
     name: Clone
-    runs-on: anjali1020.github.io
+    runs-on: ubuntu-latest
     steps:
       - name: testing
         uses: appleboy/ssh-action@master
@@ -18,6 +18,6 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           script: |
-            git clone
+            git clone https://github.com/anjali1020/anjali1020.github.io.git
       
   
